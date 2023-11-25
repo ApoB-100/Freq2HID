@@ -1,10 +1,11 @@
 # Freq2HID - Arduino Frequency-Based Keyboard Emulator
 
-<img src="logo_freq2hid.png" alt="Arduino Frequency-Based Keyboard Emulator Logo" width="200" align="right">
 
 This repository contains an Arduino sketch that enables an Arduino MKR WiFi 1010 board to function as a USB keyboard emulator. The code triggers a keypress (specifically, the space key) when a certain audio frequency (around 500 Hz) is detected above a specified volume threshold. Additionally, it prints the audio volume to the Serial Monitor at regular intervals.
 
 ## Installation
+
+<img src="logo_freq2hid.png" alt="Arduino Frequency-Based Keyboard Emulator Logo" width="300" align="right" style="border-radius: 30px;">
 
 To use this sketch, you will need:
 - An Arduino MKR WiFi 1010 board
@@ -26,6 +27,17 @@ These libraries can be installed through the Arduino Library Manager in the Ardu
 3. Open the Arduino IDE, load the provided sketch, and upload it to your Arduino MKR WiFi 1010.
 4. Open the Serial Monitor to view the audio volume readings.
 5. Press the button connected to pin 6 to toggle the keyboard emulation functionality.
+
+## Compatibility
+
+This sketch is primarily designed for the Arduino MKR WiFi 1010 board. However, it should be compatible with other Arduino boards that support USB HID (Human Interface Device) functionality and have analog input capabilities. Some compatible boards include:
+
+- Arduino Leonardo
+- Arduino Micro
+- Arduino Zero
+- Arduino Due
+
+For other Arduino models, modifications may be needed, especially if they do not natively support USB HID capabilities.
 
 ## Contributing
 
