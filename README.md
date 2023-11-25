@@ -5,7 +5,7 @@ This repository contains an Arduino sketch that enables an Arduino MKR WiFi 1010
 
 ## Installation
 
-<img src="logo_freq2hid.png" alt="Arduino Frequency-Based Keyboard Emulator Logo" width="300" align="right" style="border-radius: 30px;">
+<img src="logo_freq2hid.png" alt="Arduino Frequency-Based Keyboard Emulator Logo" width="300" align="right">
 
 To use this sketch, you will need:
 - An Arduino MKR WiFi 1010 board
