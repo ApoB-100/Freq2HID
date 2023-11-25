@@ -54,6 +54,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
 
-- This project was inspired by the need for simple, frequency-based input devices.
+- This project was inspired by the need for simple, frequency-based input devices for evaluation purposes in scientific research.
 - Thanks to the Arduino community for their invaluable resources and support.
 
