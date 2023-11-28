@@ -45,6 +45,6 @@ void loop() {
   // Print volume every half second
   if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;
-    Serial.println(analogRead(A0)); // Print the volume
+    // Serial.println(analogRead(A0)); // Print the volume
   }
 }
