@@ -32,13 +32,14 @@ void loop() {
 
   if (keyboardActive) {
     float frequency = frequencyMeter.read();
-    int volume = analogRead(A0);
+    // int volume = analogRead(A0);
 
     // Check if the frequency is close to 500 Hz and volume exceeds threshold
-    if (abs(frequency - targetFrequency) <= frequencyTolerance && volume > threshold) {
+    if (abs(frequency - targetFrequency) <= frequencyTolerance) {
       Keyboard.press(KEY_SPACE);
       delay(100);
       Keyboard.release(KEY_SPACE);
+      delay(1500);
     }
   }
 
