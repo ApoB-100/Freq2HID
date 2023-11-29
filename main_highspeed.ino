@@ -1,6 +1,7 @@
 #include <Keyboard.h>
 
-// Checks only for input volume, no FFT calculation
+// Checks only for input volume, no FFT calculation to filter a specific frequency
+// Evaluated with AD MAX4466 mic preamp and ATSAMD21G18 M0+ SoC with integrated ADC
 
 const int threshold = 600;
 
@@ -8,8 +9,10 @@ void setup() {
   Serial.begin(115200);
   Keyboard.begin();
 
-  // Board dependent, optioal setting
-  analogReadResolution(12);
+  // Board dependent, optional setting
+  // Select lowest resolution to reduce conversion time
+  // see MT SAMD21 datasheet for further reference, chapter 33.6.1, DS40001882H-page 783
+  analogReadResolution(8);
 }
 
 void loop() {
