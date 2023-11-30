@@ -3,7 +3,7 @@
 // Checks only for input volume, no FFT calculation to filter a specific frequency
 // Evaluated with AD MAX4466 mic preamp and ATSAMD21G18 M0+ SoC with integrated ADC
 
-const int threshold = 600;
+const int threshold = 200;
 
 void setup() {
   Serial.begin(115200);
